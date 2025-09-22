@@ -1,4 +1,25 @@
-# 🚧Project Under Construction🚧
-# EngageSight---AI-Engagement-Recognition-Tool 
-Developed an engagement recognition tool using Amazon Rekognition, AWS Lambda, and S3, integrating serverless processing, storage, and AI-powered video analysis. The project delivers engagement insights through a user-friendly web interface, enhancing the understanding of participation during virtual meetings.
+# EngageSight — AI Engagement Recognition Tool  
 
+🚧 **Project under construction** 🚧  
+
+EngageSight is an **AI-powered engagement recognition tool** built with **Amazon Rekognition**, **AWS Lambda**, and **Amazon S3**.  
+It integrates serverless processing, storage, and video analysis to provide **engagement insights** during virtual meetings.  
+
+---
+
+## Status  
+This repository is currently in development.  
+Stay tuned for updates!  
+
+---
+
+## Planned Features  
+- Serverless architecture with AWS Lambda  
+- Video frame analysis with Amazon Rekognition  
+- Storage and data handling via Amazon S3  
+- Web interface for visualizing engagement insights  
+
+---
+
+## License  
+TBD  
