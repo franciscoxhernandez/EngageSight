@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EngageSight – Video Upload</title>
+  <link rel="stylesheet" href="../static/main.css">
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <h2><span class="logo">🎥</span> EngageSight</h2>
+      <hr class="divider">
+      <p class="description">
+        <strong>EngageSight</strong> is an AI tool hosted on <strong>AWS EC2</strong> that uses <strong>AWS Rekognition</strong>
+        to analyse participants’ engagement levels during online meetings.<br><br>
+        This AI is part of the PhD research of <strong>Francisco Hernandez</strong>.
+        It works by comparing facial expressions to a predefined model. <strong>NO</strong> facial tracking or audio analysis is performed.
+        Faces are never uploaded; only visual features are compared locally.<br><br>
+        ⚠️ <strong>Usage recommendations:</strong><br>
+        • Maximum 10 participants per video.<br>
+        • Each participant must have a unique name.<br>
+        • Engagement is estimated from attention, speaking frequency, mood, and camera focus.<br>
+        • Usage of only one screen is recommended.<br><br>
+        After processing, you can download the results and a CSV file from <strong>DynamoDB</strong>.
+        You can also choose to divide your video into 5 s, 10 s, 20 s, 30 s, or 60 s segments.
+      </p>
+
+      <hr class="divider">
+
+      <h3>Upload Your Video</h3>
+      <div class="drop_box">
+        <header>
+          <h4>Select a Video File</h4>
+        </header>
+        <p>Supported formats: MP4, MOV, AVI</p>
+
+        <form action="/upload" method="post" enctype="multipart/form-data" id="uploadForm">
+          <input type="file" name="file" id="fileID" accept=".mp4,.mov,.avi" hidden>
+          <button type="button" class="btn" id="chooseBtn">Choose File</button>
+          <label for="interval" class="label">Divide video into segments of:</label>
+    <select name="interval" id="interval" class="dropdown">
+      <option value="5">Every 5 seconds</option>
+      <option value="10" selected>Every 10 seconds</option>
+      <option value="20">Every 20 seconds</option>
+      <option value="30">Every 30 seconds</option>
+      <option value="60">Every 60 seconds</option>
+    </select>
+          <br><br>
+          <button type="submit" class="btn" style="background-color:green;">Upload & Process</button>
+        </form>
+        <!-- 👇 Loading screen (hidden by default) -->
+<div id="loading-screen" class="loading" style="display:none;">
+  <div class="spinner"></div>
+  <p>Processing your video... please wait ⏳</p>
+</div>
+
+<!-- 👇 Results section (hidden by default) -->
+<div id="results" class="results" style="display:none;">
+  <h4>✅ Processing complete!</h4>
+  <p>You can download your results below:</p>
+  <a id="images-link" href="#" class="btn" target="_blank">Download Images (S3)</a>
+  <a id="csv-link" href="#" class="btn" target="_blank">Download CSV</a>
+</div>
+      </div>
+    </div>
+  </div>
+
+  <script src="../static/main.js"></script>
+</body>
+
+</html>
+
