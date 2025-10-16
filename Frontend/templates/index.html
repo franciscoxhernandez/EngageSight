@@ -11,6 +11,7 @@
     <div class="card">
       <h2><span class="logo">🎥</span> EngageSight</h2>
       <hr class="divider">
+
       <p class="description">
         <strong>EngageSight</strong> is an AI tool hosted on <strong>AWS EC2</strong> that uses <strong>AWS Rekognition</strong>
         to analyse participants’ engagement levels during online meetings.<br><br>
@@ -30,44 +31,56 @@
 
       <h3>Upload Your Video</h3>
       <div class="drop_box">
-        <header>
-          <h4>Select a Video File</h4>
-        </header>
+        <header><h4>Select a Video File</h4></header>
         <p>Supported formats: MP4, MOV, AVI</p>
 
         <form action="/upload" method="post" enctype="multipart/form-data" id="uploadForm">
           <input type="file" name="file" id="fileID" accept=".mp4,.mov,.avi" hidden>
           <button type="button" class="btn" id="chooseBtn">Choose File</button>
           <label for="interval" class="label">Divide video into segments of:</label>
-    <select name="interval" id="interval" class="dropdown">
-      <option value="5">Every 5 seconds</option>
-      <option value="10" selected>Every 10 seconds</option>
-      <option value="20">Every 20 seconds</option>
-      <option value="30">Every 30 seconds</option>
-      <option value="60">Every 60 seconds</option>
-    </select>
+          <select name="interval" id="interval" class="dropdown">
+            <option value="5">Every 5 seconds</option>
+            <option value="10" selected>Every 10 seconds</option>
+            <option value="20">Every 20 seconds</option>
+            <option value="30">Every 30 seconds</option>
+            <option value="60">Every 60 seconds</option>
+          </select>
           <br><br>
           <button type="submit" class="btn" style="background-color:green;">Upload & Process</button>
         </form>
-        <!-- 👇 Loading screen (hidden by default) -->
-<div id="loading-screen" class="loading" style="display:none;">
-  <div class="spinner"></div>
-  <p>Processing your video... please wait ⏳</p>
-</div>
 
-<!-- 👇 Results section (hidden by default) -->
-<div id="results" class="results" style="display:none;">
-  <h4>✅ Processing complete!</h4>
-  <p>You can download your results below:</p>
-  <a id="images-link" href="#" class="btn" target="_blank">Download Images (S3)</a>
-  <a id="csv-link" href="#" class="btn" target="_blank">Download CSV</a>
-</div>
+        <!-- 👇 Loading screen -->
+        <div id="loading-screen" class="loading" style="display:none;">
+          <div class="spinner"></div>
+          <p>Processing your video... please wait ⏳</p>
+        </div>
+
+        <!-- 👇 Results section -->
+        <div id="results" class="results" style="display:none;">
+          <h4>✅ Processing complete!</h4>
+          <p>You can download your results below:</p>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <script src="../static/main.js"></script>
+      <hr class="divider">
+
+      <h3>Download Results</h3>
+      <div class="drop_box">
+        <button class="btn" onclick="loadAnnotatedImages()">📸 View Annotated Images</button>
+        <br><br>
+        <button class="btn" onclick="window.location.href='/download_csv'">📊 Download Participant CSV</button>
+
+        <!-- 👇 Annotated Image Gallery -->
+        <div id="gallery" class="gallery" style="display:none;">
+          <h4>📸 Annotated Results</h4>
+          <div id="imageGrid" class="image-grid"></div>
+        </div>
+      </div>
+    </div> <!-- closes .card -->
+  </div> <!-- closes .container -->
+
+  <script src="{{ url_for('static', filename='main.js') }}"></script>
 </body>
-
 </html>
+
 

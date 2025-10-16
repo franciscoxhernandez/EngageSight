@@ -44,3 +44,31 @@ if (form) {
     }
   });
 }
+
+async function loadAnnotatedImages() {
+  try {
+    const res = await fetch("/download_images");
+    const data = await res.json();
+
+    if (data.success && data.annotated_images.length > 0) {
+      const gallery = document.getElementById("gallery");
+      const grid = document.getElementById("imageGrid");
+
+      grid.innerHTML = ""; // clear old content
+      data.annotated_images.forEach(url => {
+        const img = document.createElement("img");
+        img.src = url;
+        img.alt = "Annotated frame";
+        grid.appendChild(img);
+      });
+
+      gallery.style.display = "block";
+      gallery.scrollIntoView({ behavior: "smooth" });
+    } else {
+      alert("No annotated images found.");
+    }
+  } catch (err) {
+    console.error(err);
+    alert("Failed to load annotated images.");
+  }
+}
