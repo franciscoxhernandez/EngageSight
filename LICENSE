@@ -1,21 +1,48 @@
-MIT License
+EngageSight License Agreement
+=============================
 
-Copyright (c) 2025 Francisco Hernandez 
+Copyright (c) 2025 Francisco Hernandez
+Chair of Ergonomics and Innovation Management
+Technische Universität Chemnitz
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+------------------------------------------------------------
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+1. Purpose
+-----------
+This repository is shared for academic and research visibility as part of the ongoing PhD research of Francisco Hernández at TU Chemnitz.
+It provides insight into the frontend structure of the EngageSight system, including the video upload, frame extraction, and result visualization logic.
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+------------------------------------------------------------
+
+2. Permissions
+--------------
+You are permitted to:
+- View, clone, and reference the Frontend code for non-commercial and academic purposes.
+- Cite the repository or use it for research discussions and collaborations.
+
+------------------------------------------------------------
+
+3. Restrictions
+---------------
+You are not permitted to:
+- Redistribute or modify substantial parts of this project.
+- Use the EngageSight system, its architecture, or backend components for commercial, derivative, or production purposes without written consent from the author.
+- Claim ownership or reuse the system design or methods for publication without proper attribution.
+
+------------------------------------------------------------
+
+4. Disclaimer
+-------------
+The software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose, and noninfringement.
+In no event shall the author be liable for any claim, damages, or other liability arising from the use or distribution of this software.
+
+------------------------------------------------------------
+
+5. Contact
+----------
+For collaboration, demo access, or research use:
+LinkedIn: https://www.linkedin.com/in/francisco-hernandez-col-ger/
+
+------------------------------------------------------------
+
+© 2025 Francisco Hernández. All rights reserved.
