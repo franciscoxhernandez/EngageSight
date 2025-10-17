@@ -1,0 +1,43 @@
+# ===========================================================
+# 🧠 EngageSight Frontend App Dependencies
+# Author: Francisco Hernandez
+# Description: Flask + AWS Rekognition + S3 video analysis app
+# ===========================================================
+# 🪄 OS-LEVEL DEPENDENCIES (Amazon Linux 2/2023)
+# Run these once before installing Python packages:
+# -----------------------------------------------------------
+# sudo yum install -y mesa-libGL mesa-libGLU libSM libXrender libXext git
+# sudo amazon-linux-extras install epel -y
+# -----------------------------------------------------------
+
+# --- Web Framework ---
+Flask==3.0.3
+Werkzeug==3.0.3
+Jinja2==3.1.4
+itsdangerous==2.2.0
+
+# --- AWS SDK ---
+boto3==1.35.9
+botocore==1.35.9
+
+# --- Video & Image Processing ---
+opencv-python==4.10.0.84
+opencv-python-headless==4.10.0.84
+numpy==1.26.4
+tqdm==4.66.4
+
+# --- Environment Management (optional but recommended) ---
+python-dotenv==1.0.1
+
+# --- HTTP Requests (optional for API calls) ---
+requests==2.32.3
+
+# --- Production WSGI Server ---
+gunicorn==23.0.0
+
+# --- Security & Encoding Support ---
+charset-normalizer==3.3.2
+urllib3==2.2.2
+
+# --- Logging / Debugging (optional but useful) ---
+colorama==0.4.6
