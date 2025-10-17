@@ -25,7 +25,14 @@ A short **demo video** is available to illustrate how the system works in action
 
 If you are interested in a **collaboration**, **demo**, or **research access**, please contact me directly:
  
-- 🔗 [**LinkedIn**](https://www.linkedin.com/in/francisco-hernandez-col-ger/) 
+- 🔗 [**LinkedIn**](https://www.linkedin.com/in/francisco-hernandez-col-ger/)
+
+## 🖥️ EngageSight Web Interface
+
+Below is a preview of the EngageSight web application, showing the video upload interface and processing options.
+
+<img width="573" height="844" alt="EngageSight_App" src="https://github.com/user-attachments/assets/c5c04ad2-aad6-43da-ac2e-bc2ae6f80ec6" />
+
 
 ### 🔄 How it works
 1. **Video Upload**
