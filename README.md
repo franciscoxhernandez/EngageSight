@@ -52,7 +52,8 @@ to draw bounding boxes and labels.
     - 🟢 **GREEN**  → High Engagement 
     - 🟡 **YELLOW** → Medium Engagement 
     - 🔴 **RED** → Low Engagement 
-    - `ADD HERE AND EXAMPLE OF GREEN YELLOW AND RED`
+    <img width="3199" height="1567" alt="EngageSight_Example_Engagement" src="https://github.com/user-attachments/assets/437e2377-e105-489b-bdf6-c2ccc7df18c5" />
+
 - Annotated images are uploaded to S3 → `engagesight-annotated`.
 - The web app displays these annotated images directly in the browser.
 5. **Results Download**
@@ -77,9 +78,9 @@ to draw bounding boxes and labels.
 EngageSight offers a **fully automated AI workflow** from video upload to engagement visualization.
 
 ### 🧩 Architecture Overview
-```
 
-```
+![AWS Architecture Diagram - AWS_grocery - EngageSight](https://github.com/user-attachments/assets/18777f34-4bf6-4cab-b999-db9d638eec89)
+
 
 ## 🧮 Simplified Frontend Logic
 
