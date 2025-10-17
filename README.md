@@ -52,7 +52,7 @@ to draw bounding boxes and labels.
     - 🟢 **GREEN**  → High Engagement 
     - 🟡 **YELLOW** → Medium Engagement 
     - 🔴 **RED** → Low Engagement 
-    <img width="800" height="390" alt="EngageSight_Example_Engagement" src="https://github.com/user-attachments/assets/437e2377-e105-489b-bdf6-c2ccc7df18c5" />
+    <img width="800" alt="EngageSight_Example_Engagement" src="https://github.com/user-attachments/assets/437e2377-e105-489b-bdf6-c2ccc7df18c5" />
 
 - Annotated images are uploaded to S3 → `engagesight-annotated`.
 - The web app displays these annotated images directly in the browser.
