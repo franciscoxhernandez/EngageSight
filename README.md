@@ -98,7 +98,7 @@ EngageSight offers a **fully automated AI workflow** from video upload to engage
 | 🧼 **Auto-clean** | After processing, temporary video files are automatically deleted from EC2 to save space. |
 | 💬 **Clear logs** | Console logs show video name, duration, chosen interval, and progress. |
 | 🚨 **Error handling** | The app returns structured error messages (missing file, invalid format, AWS issues, etc.). |
-| 🖼️ **Download Annotated Images** | Lists all `.png` / `.jpg` files from `s3://engagesight-annotated/annotated/`. |
+| 🖼️ **Download Annotated Images** | Lists all `.png` / `.jpg` files from `s3://engagesight-annotated/`. |
 | 📊 **Download Participant CSV** | Exports all DynamoDB table entries into a downloadable CSV. |
 
 ----
@@ -106,7 +106,7 @@ EngageSight offers a **fully automated AI workflow** from video upload to engage
 ## 📜 License
 
 This repository is shared for **academic and research visibility** only.  
-All rights to the EngageSight architecture, backend pipeline, and associated AWS infrastructure remain with **Francisco Hernández** and the **Chair of Ergonomics and Innovation Management, Technische Universität Chemnitz**.
+All rights to the EngageSight architecture, backend pipeline, and associated AWS infrastructure remain with **Francisco Hernandez** and the **Chair of Ergonomics and Innovation Management, Technische Universität Chemnitz**.
 
 You may **view, clone, and reference** this code for non-commercial purposes.  
 Reproduction, distribution, or commercial use of the full EngageSight system (including backend and AI logic) requires **explicit written permission** from the author.
